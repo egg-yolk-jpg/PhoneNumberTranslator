@@ -1,0 +1,25 @@
+﻿<Window x:Class="Alphabetic_Phone_Number_Translator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Alphabetic_Phone_Number_Translator"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+
+
+    <Grid Background="Black">
+        <Image HorizontalAlignment="Center" Height="756" VerticalAlignment="Center" Width="838" Source="/resumeBackground.png" Stretch="Fill"/>
+
+        <Label x:Name="instructionsLabel" Content="Write Phone Number in the XXX-XXX-XXXX Format Here." HorizontalAlignment="Left" Margin="36,75,0,0" VerticalAlignment="Top" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="24" FontWeight="Bold" Background="#FFE6E0CA" Foreground="Black" BorderBrush="#FFE4E0C6" Width="746"/>
+        <TextBox x:Name="enterNumbersTextBox" HorizontalAlignment="Left" Height="66" Margin="43,122,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="610" FontSize="36" FontWeight="Bold" TextAlignment="Center" BorderThickness="5,5,5,5" BorderBrush="#FFE9C800"/>
+        <Button x:Name="translateButton" Content="Translate Number" HorizontalAlignment="Left" Margin="43,213,0,0" VerticalAlignment="Top" FontSize="24" FontWeight="Bold" Height="42" Width="215" Click="translateButton_Click" Background="#FFC4E3D6"/>
+        <Button x:Name="exitButton" Content="Exit" HorizontalAlignment="Left" Margin="702,10,0,0" VerticalAlignment="Top" FontSize="24" FontWeight="Bold" Height="52" Width="70" Background="#FFB54C4C" Foreground="White" Click="exitButton_Click"/>
+        <Button x:Name="clearButton" Content="Clear All" HorizontalAlignment="Left" Margin="43,260,0,0" VerticalAlignment="Top" FontSize="24" FontWeight="Bold" Height="42" Width="108" Click="clearButton_Click" Background="#FFB4E3DA"/>
+        <Label HorizontalAlignment="Left" Height="71" Margin="127,328,0,0" VerticalAlignment="Top" Width="610" BorderThickness="5,5,5,5" BorderBrush="#FFE9C800" Background="White">
+            <TextBlock x:Name="translatedTextBlock" Height="52" TextWrapping="Wrap" Width="589" FontSize="36" TextAlignment="Center" FontWeight="Bold"/>
+        </Label>
+        <Label x:Name="instructionsLabel2" Content="See Translation Here." HorizontalAlignment="Left" Margin="392,281,0,0" VerticalAlignment="Top" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="24" FontWeight="Bold" Background="#FFE6E0CA" Foreground="Black" BorderBrush="#FFE4E0C6" Width="346"/>
+
+    </Grid>
+</Window>
